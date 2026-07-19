@@ -162,7 +162,6 @@ ul{
     background:#fff;
     border-radius:18px;
     padding:25px;
-    margin-bottom: 140rem;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
@@ -191,7 +190,6 @@ ul{
 
 .category-list li{
     padding:14px 15px;
-    margin-bottom:10px;
     border-radius:10px;
     font-weight:600;
     transition:.3s;
