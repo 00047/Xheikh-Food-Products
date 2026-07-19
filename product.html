@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | SHEIKH FOOD PRODUCTS</title>
+
+    <link rel="stylesheet" href="product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+🔥 Fresh Products • Premium Quality • Fast Delivery
+</div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>SHEIKH <span>FOOD PRODUCTS</span></h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="product.html">Products</a></li>
+<li><a href="about us.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<!-- CART ICON -->
+<div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+<div class="menu-btn">
+<i class="fas fa-bars"></i>
+</div>
+
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-sidebar">
+
+    <div class="close-btn">&times;</div>
+
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about us.html">About</a>
+    <a href="contact.html">Contact</a>
+
+</div>
+
+</header>
+
+<!-- CART SIDEBAR -->
+<div class="overlay"></div>
+
+    <div class="cart-sidebar">
+
+    <div class="cart-header">
+
+        <div class="cart-title">
+
+            <h2>
+                Shopping Cart
+                (<span class="cart-count-header">0</span>)
+            </h2>
+
+            <button class="clear-cart-btn">
+                Clear Cart
+            </button>
+
+        </div>
+
+        <span class="close-cart">&times;</span>
+
+    </div>
+
+        <div class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Subtotal:
+            Rs. <span id="cart-subtotal">0</span>
+        </h3>
+
+        <h3>
+            Delivery:
+            <span id="delivery-charge">Rs.300</span>
+        </h3>
+
+        <h3>
+            Grand Total:
+            Rs. <span id="cart-total">0</span>
+        </h3>
+
+        <p class="delivery-note">
+            🚚 Free Delivery on orders above Rs.5000
+        </p>
+
+        <button class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+        <p class="secure-text">
+            <i class="fas fa-lock"></i>
+            Your information is safe & secure.
+        </p>
+
+    </div>
+
+    </div>
+
+<!-- SINGLE OVERLAY ONLY -->
+<div class="overlay"></div>
+
+<!-- PAGE TITLE -->
+<section class="page-title">
+
+<h1>Our Products</h1>
+
+<p>Premium Quality Dry Fruits & Snacks</p>
+
+</section>
+
+<!-- SEARCH -->
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search Products...">
+
+<button>
+<i class="fas fa-search"></i>
+</button>
+
+</div>
+
+<!-- PRODUCTS -->
+<section class="shop-container">
+
+<aside class="sidebar">
+
+<h2>Shop By Wieght</h2>
+
+<ul class="category-list">
+    <li data-weight="all">All Products</li>
+    <li data-weight="1kg">1 kg</li>
+    <li data-weight="750g">750 g</li>
+    <li data-weight="500g">500 g</li>
+    <li data-weight="250g">250 g</li>
+</ul>
+<div class="custom-order">
+    <i class="fas fa-phone-alt"></i>
+    <h3>Need a Custom Quantity?</h3>
+    <p>Contact us for bulk or custom orders.</p>
+    <a href="contact.html" class="contact-btn">Contact Us</a>
+</div>
+
+</aside>
+
+<div class="products-grid">
+
+<div class="product-card" data-weight="1kg">
+
+<span class="badge">Best Seller</span>
+<img src="images/erani.png">
+
+<div class="product-info">
+
+<h3>Irani Dates</h3>
+<p class="price">Rs.600/kg </p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Irani Dates', 600)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="1kg">
+
+<span class="badge">Popular</span>
+<img src="images/rabbi.png">
+
+<div class="product-info">
+
+<h3>Rabbi Dates</h3>
+<p class="price">Rs.1200/kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Rabbi Dates', 1200)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="1kg">
+
+<span class="badge">Fresh</span>
+<img src="images/mabroom.png">
+
+<div class="product-info">
+
+<h3>Mabroom Dates</h3>
+<p class="price">Rs.2000/kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Mabroom Dates', 2000)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="1kg">
+
+<span class="badge">Hot</span>
+<img src="images/ajwa.png">
+
+<div class="product-info">
+
+<h3>Ajwa Dates</h3>
+<p class="price">Rs.1000/kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Ajwa Dates', 1000)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="500g" >
+
+<span class="badge">Premium</span>
+<img src="images/erani.png">
+
+<div class="product-info">
+
+<h3>Irani Dates</h3>
+<p class="price">Rs.300/½</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Irani Dates', 300)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card" data-weight="500g">
+
+<span class="badge">Hot</span>
+<img src="images/rabbi.png">
+
+<div class="product-info">
+
+<h3>Rabbi Dates</h3>
+<p class="price">Rs600/½kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Rabbi Dates', 600)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="500g">
+
+<span class="badge">Premium</span>
+<img src="images/mabroom.png">
+
+<div class="product-info">
+
+<h3>Mabroom Dates</h3>
+<p class="price">Rs.1000/½</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Mabroom Dates', 1000)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card" data-weight="500g">
+
+<span class="badge">Hot</span>
+<img src="images/ajwa.png">
+
+<div class="product-info">
+
+<h3>Ajwa Dates</h3>
+<p class="price">Rs.500/½kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Ajwa Dates', 500)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="750g">
+
+<span class="badge">Premium</span>
+<img src="images/erani.png">
+
+<div class="product-info">
+
+<h3>Irani Dates</h3>
+<p class="price">Rs.450/¾kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Irani Dates', 450)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card"data-weight="750g">
+
+<span class="badge">Hot</span>
+<img src="images/rabbi.png">
+
+<div class="product-info">
+
+<h3>Rabbi Dates</h3>
+<p class="price">Rs.900/¾kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Rabbi Dates', 900)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="750g">
+
+<span class="badge">Premium</span>
+<img src="images/mabroom.png">
+
+<div class="product-info">
+
+<h3>Mabroom Dates</h3>
+<p class="price">Rs.1500/¾</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Mabroom Dates', 1500)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card" data-weight="750g">
+
+<span class="badge">Hot</span>
+<img src="images/ajwa.png">
+
+<div class="product-info">
+
+<h3>Ajwa Dates</h3>
+<p class="price">Rs.750/¾kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Ajwa Dates', 750)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="250g">
+
+<span class="badge">Premium</span>
+<img src="images/erani.png">
+
+<div class="product-info">
+
+<h3>Irani Dates</h3>
+<p class="price">Rs.150/¼kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Irani Dates', 150)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card" data-weight="250g">
+
+<span class="badge">Hot</span>
+<img src="images/rabbi.png">
+
+<div class="product-info">
+
+<h3>Rabbi Dates</h3>
+<p class="price">Rs.300/¼kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Rabbi', 300)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card" data-weight="250g">
+
+<span class="badge">Premium</span>
+<img src="images/mabroom.png">
+
+<div class="product-info">
+
+<h3>Mabroom Dates</h3>
+<p class="price">Rs.500/¼</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Mabroom Dates', 500)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+<div class="product-card" data-weight="250g">
+
+<span class="badge">Hot</span>
+<img src="images/ajwa.png">
+
+<div class="product-info">
+
+<h3>Ajwa Dates</h3>
+<p class="price">Rs.250/¼kg</p>
+
+<a href="#" class="buy-btn" onclick="addToCart(event,'Ajwa Dates', 250)">
+Buy Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="no-results" style="display:none;">
+    <h2>😔 No Products Found</h2>
+    <p>Sorry! We couldn't find any product matching your search.</p>
+</div>
+
+</section>
+
+<footer>
+
+<h2>SHEIKH FOOD PRODUCTS</h2>
+<p>Premium Dry Fruits • Fresh Snacks • Trusted Quality</p>
+<p>© 2026 Sheikh Food Products. All Rights Reserved.</p>
+
+</footer>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+<!-- SCRIPTS -->
+<script src="product.js"></script>
+
+</body>
+</html>
