@@ -266,3 +266,11 @@ categories.forEach(category => {
 
 });
 
+
+function checkout() {
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    window.location.href = "contact.html";
+
+}

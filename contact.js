@@ -4,6 +4,8 @@
 const menuBtn = document.querySelector(".menu-btn");
 const mobileSidebar = document.querySelector(".mobile-sidebar");
 const closeBtn = document.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
+const cartSidebar = document.querySelector(".cart-sidebar");
 
 if(menuBtn){
 
@@ -27,13 +29,15 @@ if(closeBtn){
 
 }
 
-overlay.addEventListener("click",()=>{
+if (overlay) {
+    overlay.addEventListener("click", () => {
 
-    mobileSidebar.classList.remove("active");
-    cartSidebar.classList.remove("active");
-    overlay.classList.remove("active");
+        mobileSidebar?.classList.remove("active");
+        cartSidebar?.classList.remove("active");
+        overlay.classList.remove("active");
 
-});
+    });
+}
 
  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -50,7 +54,7 @@ if(contactForm){
         const address = document.querySelector('input[name="address"]').value;
         const messageText = this.querySelector('textarea[name="message"]').value;
 
-const ownerNumber = "92240507608";
+const ownerNumber = "923240507608";
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
