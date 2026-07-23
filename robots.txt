@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://00047.github.io/Xheikh-Food-Products/sitemap.xml
+Sitemap: https://00047.github.io/Sheikh-Food-Products/sitemap.xml
